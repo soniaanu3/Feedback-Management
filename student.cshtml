@@ -1,0 +1,43 @@
+﻿
+@*@{
+    ViewBag.Title = "student";
+    Layout = "~/Views/_ViewStart.cshtml";
+}*@
+
+<h2>student</h2>
+<h4 style="text-align:center;color:grey;padding:10px;">Student</h4>
+<form id="contact" action="" method="post">
+    <fieldset>
+        <input name="stud_id" type="text" class="form-control" id="stud_id" placeholder="Student ID" required="">
+    </fieldset><br />
+    <fieldset>
+        <input name="name" type="text" class="form-control" id="name" placeholder="Student Name" required="">
+    </fieldset><br />
+    <fieldset>
+        <select name="batch_id" id="batch_id" class="form-control">
+            <option value="Batch">Batch</option>
+        </select>
+    </fieldset><br />
+    <fieldset>
+        <select name="course_id" id="course_id" class="form-control">
+            <option value="Course">Course</option>
+        </select>
+    </fieldset><br />
+    <fieldset>
+        <select name="semester_id" id="semester_id" class="form-control">
+            <option value="Semester">Semester</option>
+        </select>
+    </fieldset><br />
+    <fieldsetn>
+        <label for="OR">OR</label>
+    </fieldsetn><br />
+    <fieldset>
+        <label for="UploadDetails">Upload Details</label>
+        <input name="Studentfile" type="file" id="Studentfile">
+    </fieldset><br />
+    <fieldset>
+        <button type="submit" id="form-submit" class="btn">Submit</button>
+    </fieldset>
+
+</form>
+

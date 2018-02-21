@@ -1,0 +1,23 @@
+﻿@*@model project.Models.Batch1
+@{
+    ViewBag.Title = "batch";
+    Layout = "~/Views/_ViewStart.cshtml";
+}*@
+
+<<h4 style="text-align:center;color:grey;padding:10px;">Batch</h4>
+<form id="contact" action="" method="post">
+    @ViewBag.Message
+    <fieldset>
+        <input name="batch_id" type="text" class="form-control" id="batch_id" placeholder="Batch Id" required="">
+    </fieldset><br />
+    <fieldset>
+        <input name="batch_name" type="text" class="form-control" id="batch_name" placeholder="Batch Name" required="">
+    </fieldset><br />
+    <fieldset>
+        @Html.DropDownList("course_id", (IEnumerable<SelectListItem>)ViewBag.course_id, "Choose item", new { @class = "form-control" })
+    </fieldset><br />
+    
+        <fieldset>
+            <button type="submit" id="form-submit" class="btn">Submit</button>
+        </fieldset>
+</form>
